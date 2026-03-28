@@ -1,3 +1,4 @@
+import StickyButtons from './components/StickyButtons'
 import { useEffect, useState } from 'react'
 import { getRestaurantData, trackEvent } from './lib/supabase'
 import Nav from './components/Nav'
@@ -60,6 +61,7 @@ export default function App() {
       <LocationSection restaurant={restaurant} hours={hours} links={links} />
       <ContactSection restaurant={restaurant} links={links} />
       <Footer restaurant={restaurant} />
+<StickyButtons restaurant={restaurant} links={links} />
     </>
   )
 }
